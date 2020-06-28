@@ -1,0 +1,63 @@
+﻿<Window Closing="Window_Closing"
+        x:Class="FonyRunwoman.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FonyRunwoman"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="700">
+    <Grid Margin="0,0,-8,0" Background="#FF9CE4A9">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="639*"/>
+            <ColumnDefinition Width="61*"/>
+        </Grid.ColumnDefinitions>
+        <WrapPanel Margin="271,179,182,10" Orientation="Horizontal" Background="#FF9CE4A9">
+            <Button x:Name="btnPrevious" Content="" HorizontalAlignment="Left" VerticalAlignment="Center" Width="30" Height="30" RenderTransformOrigin="-1.969,0.539" BorderBrush="#FF9CE4A9">
+                <Button.Background>
+                    <ImageBrush ImageSource="Pictures/icons8-skip-to-start-50.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnStop" Content="" HorizontalAlignment="Left" VerticalAlignment="Center" Width="30" Height="30" RenderTransformOrigin="-1.969,0.539" BorderBrush="#FF9CE4A9" Click="btnStop_Click" Foreground="White">
+                <Button.Background>
+                    <ImageBrush ImageSource="Pictures/icons8-stop-50.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnPlay" Content="" HorizontalAlignment="Left" VerticalAlignment="Center" Width="30" Height="30" RenderTransformOrigin="0.467,-0.2" BorderBrush="#FF9CE4A9" Click="btnPlay_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Pictures/icons8-play-50.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnPause" Content="" HorizontalAlignment="Left" VerticalAlignment="Center" Width="30" Height="30" RenderTransformOrigin="0.5,0.5" BorderBrush="#FF9CE4A9" Click="btnPause_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Pictures/icons8-pause-50.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnLast" Content="" HorizontalAlignment="Left" VerticalAlignment="Center" Width="32" Height="30" RenderTransformOrigin="-0.094,0.644" BorderBrush="#FF9CE4A9">
+                <Button.Background>
+                    <ImageBrush ImageSource="Pictures/icons8-end-50.png" Stretch="Uniform"/>
+                </Button.Background>
+            </Button>
+        </WrapPanel>
+        <Button x:Name="btnShuffle" Content="" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,10,0,179" Width="30" Height="30" RenderTransformOrigin="0.5,0.5" BorderBrush="#FF9CE4A9">
+            <Button.Background>
+                <ImageBrush ImageSource="Pictures/icons8-Shuffle-50.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnPlaylist" Content="" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="40,10,0,179" Width="30" Height="30" RenderTransformOrigin="0.7,0.567" BorderBrush="#FF9CE4A9">
+            <Button.Background>
+                <ImageBrush ImageSource="Pictures/icons8-playlist-50.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnInsert" Content="" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="70,10,0,179" Width="30" Height="30" RenderTransformOrigin="0.7,0.567" BorderBrush="#FF9CE4A9" Click="btnInsert_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Pictures/icons8-insert-button-50.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Slider HorizontalAlignment="Left" Margin="559,187,0,0" VerticalAlignment="Top" Width="123" Height="22" Grid.ColumnSpan="2"/>
+        <Slider x:Name="trackPosition" HorizontalAlignment="Left" Margin="70,152,0,0" VerticalAlignment="Top" Width="552" Height="22" ValueChanged="trackPosition_ValueChanged"/>
+        <TextBlock x:Name="txtNowPlaying" HorizontalAlignment="Left" Margin="559,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="16" Width="0"/>
+        <TextBlock x:Name="txtCurrentTime" HorizontalAlignment="Left" Margin="70,131,0,0" TextWrapping="Wrap" Text="00:00" VerticalAlignment="Top" Height="16" Width="30"/>
+        <TextBlock x:Name="txtTotalTime" HorizontalAlignment="Left" Margin="601,136,0,0" TextWrapping="Wrap" Text="00:00" VerticalAlignment="Top" Height="16" Width="38"/>
+    </Grid>
+</Window>
