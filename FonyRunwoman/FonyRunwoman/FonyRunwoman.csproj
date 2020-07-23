@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{651F0B8A-E8E2-446D-A10B-2CA31460FA79}</ProjectGuid>
+    <ProjectGuid>{BF65BC1E-2D51-4193-BF4C-CF7659D7CC5A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>FonyRunwoman</RootNamespace>
     <AssemblyName>FonyRunwoman</AssemblyName>
@@ -101,16 +101,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Pictures\icons8-end-50.png" />
-    <Resource Include="Pictures\icons8-insert-button-50.png" />
-    <Resource Include="Pictures\icons8-mute-50.png" />
-    <Resource Include="Pictures\icons8-pause-50.png" />
-    <Resource Include="Pictures\icons8-play-50.png" />
-    <Resource Include="Pictures\icons8-playlist-50.png" />
-    <Resource Include="Pictures\icons8-shuffle-50.png" />
-    <Resource Include="Pictures\icons8-skip-to-start-50.png" />
-    <Resource Include="Pictures\icons8-speaker-50.png" />
-    <Resource Include="Pictures\icons8-stop-50.png" />
+    <Folder Include="Images\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
